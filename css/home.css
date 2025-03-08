@@ -5,12 +5,12 @@
     box-sizing: border-box;
 }
 body{
-    background-color: wheat;
+    background-color: var(--color-9);
     padding: 24px;
 }
 /*************** header *****************/
 header{
-    background-color: rgba(0, 0, 255, 0.205);
+    /* background-color: rgba(0, 0, 255, 0.205); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,24 +18,59 @@ header{
 .header__title{
     display: flex;
     flex-direction: column;
+    gap: 4px;
 }
 .header__title h1{
     font-family: "EncodeSans-Regular";
     font-size: 12px;
+    line-height: 150%;
     color: var(--color-2);
 }
 .header__title h3{
     font-family: "EncodeSans-Bold";
     font-size: 16px;
+    line-height: 150%;
     color: var(--color-5);
 }
 header img{
     width: 32px;
     height: 32px;
-    border-radius: 50%;
+    border-radius: 100px;
+    object-fit: cover;
 }
 /****************************************/
 /**************** main ******************/
 nav{
     background-color: rgba(165, 42, 42, 0.466);
+}
+.nav__search {
+}
+.form__search {
+}
+.input__logo {
+}
+.input__logo input{
+
+}
+.input__filter {
+}
+.input__filter input{
+
+}
+ul{ /* Falta agregar las pseudoclases */
+
+}
+.nav__category {
+}
+.nav__category li{
+
+}
+.nav__category li a{
+
+}
+li.select {
+
+}
+li.select a{
+
 }
