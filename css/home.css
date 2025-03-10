@@ -110,7 +110,7 @@ ul{ /* Falta agregar las pseudoclases */
     /* display: flex; */
 }
 .nav__category {
-    background-color: gainsboro;
+    /* background-color: gainsboro; */
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -121,16 +121,17 @@ ul{ /* Falta agregar las pseudoclases */
     overflow-x: scroll;
 }
 .nav__category li{
-    background: rgba(95, 158, 160, 0.288);
+    /* background: rgba(95, 158, 160, 0.288); */
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 26%;
+    min-width: 25%;
     height: 34px;
     list-style: none;
     gap: 4px;
     padding: 8px 12px;
+    border: solid 1px var(--color-10);
     border-radius: 8px;
 }
 .nav__category li a{
@@ -147,9 +148,10 @@ ul{ /* Falta agregar las pseudoclases */
     height: 16px;
     object-fit: cover;
 }
-li.select {
-/* Se debe darle un min-width un poco mayor */
+ul li.select {
+    min-width: 28%;
+    background: var(--color-1);
 }
 li.select a{
-
+    color: var(--color-11);
 }
