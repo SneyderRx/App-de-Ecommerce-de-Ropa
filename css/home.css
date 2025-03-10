@@ -14,6 +14,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 16px;
 }
 .header__title{
     display: flex;
@@ -39,37 +40,115 @@ header img{
     object-fit: cover;
 }
 /****************************************/
-/**************** main ******************/
+/**************** nav ******************/
 nav{
-    background-color: rgba(165, 42, 42, 0.466);
+    /* background-color: rgba(165, 42, 42, 0.466); */
 }
 .nav__search {
+    /* display: flex;
+    flex-direction: column; */
 }
 .form__search {
+    /* background-color: rgba(0, 0, 255, 0.168); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
 }
 .input__logo {
+    /* background-color: red; */
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
 }
 .input__logo input{
-
+    display: flex;
+    position: relative;
+    width: 70.13vw;
+    height: 48px;
+    border: 1px solid var(--color-10);
+    border-radius: 8px;
+    padding: 14px 16px 14px 44px;
+    gap: 8px; /* creo que va en .input__logo */
+    font-family: "EncodeSans-Regular";
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-7);
+}
+.input__logo input::placeholder{
+    color: var(--color-7);
+}
+.input__logo::before{
+    /* background-color: pink; */
+    content: url(../storage/img/search.png);
+    position: absolute;
+    padding-left: 16px;
+    z-index: 5;
 }
 .input__filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .input__filter input{
-
+    width: 48px;
+    height: 48px;
+    background: var(--color-1);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+}
+.input__filter::after{
+    content: url(../storage/img/filter.png);
+    object-fit: cover;
+    position: absolute;
+    width: 24px;
+    height: 24px;
 }
 ul{ /* Falta agregar las pseudoclases */
-
+    /* display: flex; */
 }
 .nav__category {
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+    /* width: 87.2vw; */
+    height: 48px;
+    overflow-x: scroll;
 }
 .nav__category li{
-
+    background: rgba(95, 158, 160, 0.288);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 26%;
+    height: 34px;
+    list-style: none;
+    gap: 4px;
+    padding: 8px 12px;
+    border-radius: 8px;
 }
 .nav__category li a{
-
+    display: flex;
+    gap: 4px;
+    text-decoration: none;
+    font-family: "EncodeSans-Medium";
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--color-1);
+}
+.nav__category img{
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
 }
 li.select {
-
+/* Se debe darle un min-width un poco mayor */
 }
 li.select a{
 
