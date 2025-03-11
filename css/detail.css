@@ -79,16 +79,22 @@ section{
     justify-content: flex-start;
 }
 .product__score img{
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     object-fit: cover;
     padding-right: 8px;
 }
 .product__score label{
-
+    font-family: "EncodeSans-Regular";
+    font-size: 12px;
+    line-height: 120%;
+    color: var(--color-2);
 }
 .product__score p{
-
+    font-family: "EncodeSans-Regular";
+    font-size: 12px;
+    line-height: 120%;
+    color: var(--color-6);
 }
 .product__amount {
     display: flex;
@@ -111,5 +117,23 @@ section{
     object-fit: cover;
 }
 .product__amount label{
-
+    font-family: "EncodeSans-Bold";
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--color-1);
+}
+section{
+    display: flex;
+}
+.product__description{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 84%;
+}
+.product__description p{
+    font-family: "EncodeSans-Regular";
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--color-8);
 }
