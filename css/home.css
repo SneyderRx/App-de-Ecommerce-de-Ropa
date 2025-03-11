@@ -106,22 +106,26 @@ nav{
     width: 24px;
     height: 24px;
 }
-ul{ /* Falta agregar las pseudoclases */
+/************ Barra nav *****************/
+ul{ 
     /* display: flex; */
 }
 .nav__category {
-    background-color: gainsboro;
+    /* background-color: var(--color-9); Activar esta opción para un fondo */
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     gap: 16px;
     margin-bottom: 24px;
-    /* width: 87.2vw; */
+    /* width: 87.2vw; No es necesario por el width del padre */
     height: 48px;
     overflow-x: scroll;
 }
 .nav__category li{
-    background: rgba(95, 158, 160, 0.288);
+    background: var(--color-9);
     position: relative;
     display: flex;
     align-items: center;
@@ -131,6 +135,7 @@ ul{ /* Falta agregar las pseudoclases */
     list-style: none;
     gap: 4px;
     padding: 8px 12px;
+    border: solid 1px var(--color-10);
     border-radius: 8px;
 }
 .nav__category li a{
@@ -147,9 +152,141 @@ ul{ /* Falta agregar las pseudoclases */
     height: 16px;
     object-fit: cover;
 }
-li.select {
-/* Se debe darle un min-width un poco mayor */
+ul li.select {
+    min-width: 29%;
+    background: var(--color-1);
+    border-color: var(--color-1);
 }
 li.select a{
+    color: var(--color-11);
+}
+/****************************************/
+/************** main *******************/
+main{
+    /* background-color: black; */
+}
+section{
+
+}
+.section__products{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px 17px;
+    padding-bottom: 32px;
+}
+article{
+
+}
+.article__contain {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 47%;
+}
+.article__contain img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 8px;
+}
+.contain__heart{
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    object-fit: cover;
+    width: 24px;
+    height: 24px;
+    border-radius: 32px;
+}
+.div__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+.div__info strong{
+    font-family: "EncodeSans-Bold";
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-5);
+}
+.div__info p{
+    font-family: "EncodeSans-Regular";
+    font-size: 10px;
+    line-height: 150%;
+    color: var(--color-2);
+}
+.div__value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 111px;
+}
+.div__value strong{
+    font-family: "EncodeSans-Bold";
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-1);
+}
+.div__score {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.div__score img{
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+    margin: 0;
+}
+.div__score label{
+    font-family: "EncodeSans-Regular";
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--color-1);
+}
+/******************************************/
+/************** footer *******************/
+div{
+   
+}
+.footer__nav{
+    background-color: var(--color-1);
+    display: flex;
+    position: sticky;
+    bottom: 32px;
+    z-index: 100;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    border-radius: 44px;
+    padding: 10px 16px;
+    /* overflow: hidden; */
+    /* gap: 45px; */
+}
+.footer__nav::after {
+    content: '';
+    position: fixed;
+    top: calc(100% - 32px);
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: -1;
+    /* border-radius: 44px; */
+}
+.footer__nav a{
+    background-color: var(--color-12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.footer__nav a img{
 
 }
