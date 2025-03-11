@@ -8,3 +8,108 @@ body{
     background-color: var(--color-9);
     padding: 24px;
 }
+/**************** Header *****************/
+header{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+img{
+    height: 392px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 16px;
+    /* margin-bottom: 24px; */
+}
+.img__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+}
+.img__btns a{
+    background-color: var(--color-11);
+    width: 40px;
+    height: 40px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px var(--color-13);
+}
+.img__btns a img{
+    width: 24px;
+    height: 24px;
+}
+/*********************************************/
+/****************** Main *******************/
+main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 24px;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.product__info {
+}
+.product__title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.product__title h1 {
+    font-family: "EncodeSans-SemiBold";
+    font-size: 24px;
+    line-height: 130%;
+    color: var(--color-5);
+}
+.product__score {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.product__score img{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    padding-right: 8px;
+}
+.product__score label{
+
+}
+.product__score p{
+
+}
+.product__amount {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+}
+.product__amount a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: solid 1px var(--color-10);
+    border-radius: 32px;
+}
+.product__amount a img{
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+.product__amount label{
+
+}
