@@ -106,7 +106,8 @@ nav{
     width: 24px;
     height: 24px;
 }
-ul{ /* Falta agregar las pseudoclases */
+/************ Barra nav *****************/
+ul{ 
     /* display: flex; */
 }
 .nav__category {
@@ -116,7 +117,7 @@ ul{ /* Falta agregar las pseudoclases */
     justify-content: flex-start;
     gap: 16px;
     margin-bottom: 24px;
-    /* width: 87.2vw; */
+    /* width: 87.2vw; No es necesario por el width del padre */
     height: 48px;
     overflow-x: scroll;
 }
@@ -126,7 +127,7 @@ ul{ /* Falta agregar las pseudoclases */
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 25%;
+    min-width: 26%;
     height: 34px;
     list-style: none;
     gap: 4px;
@@ -149,9 +150,96 @@ ul{ /* Falta agregar las pseudoclases */
     object-fit: cover;
 }
 ul li.select {
-    min-width: 28%;
+    min-width: 29%;
     background: var(--color-1);
+    border-color: var(--color-1);
 }
 li.select a{
     color: var(--color-11);
+}
+/****************************************/
+/************** main *******************/
+main{
+    /* background-color: black; */
+}
+section{
+
+}
+.section__products{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px 17px;
+}
+article{
+
+}
+.article__contain {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 47%;
+}
+.article__contain img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 8px;
+}
+.contain__heart{
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    object-fit: cover;
+    width: 24px;
+    height: 24px;
+    border-radius: 32px;
+}
+.div__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+.div__info strong{
+    font-family: "EncodeSans-Bold";
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-5);
+}
+.div__info p{
+    font-family: "EncodeSans-Regular";
+    font-size: 10px;
+    line-height: 150%;
+    color: var(--color-2);
+}
+.div__value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 111px;
+}
+.div__value strong{
+    font-family: "EncodeSans-Bold";
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-1);
+}
+.div__score {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.div__score img{
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+    margin: 0;
+}
+.div__score label{
+    font-family: "EncodeSans-Regular";
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--color-1);
 }
