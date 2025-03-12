@@ -82,13 +82,13 @@ section{
     width: 18px;
     height: 18px;
     object-fit: cover;
-    padding-right: 8px;
 }
 .product__score label{
     font-family: "EncodeSans-Regular";
     font-size: 12px;
     line-height: 120%;
     color: var(--color-2);
+    padding-left: 8px;
 }
 .product__score p{
     font-family: "EncodeSans-Regular";
@@ -122,9 +122,6 @@ section{
     font-size: 16px;
     line-height: 120%;
     color: var(--color-1);
-}
-section{
-    display: flex;
 }
 .product__description{
     display: flex;
@@ -235,4 +232,38 @@ hr{
     align-items: center;
     justify-content: flex-start;
     gap: 8px;
+}
+.product__buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background: var(--color-1);
+    padding: 18px 16px;
+    gap: 8px;
+    border-radius: 45px;
+}
+.product__buy img{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+.product__buy a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-11);
+    text-decoration: none;
+}
+.product__buy a p{
+    font-family: "EncodeSans-Bold";
+    font-size: 14px;
+    line-height: 140%;
+}
+.product__buy a del{
+    font-family: "EncodeSans-Regular";
+    font-size: 10px;
+    line-height: 140%;
+    padding-left: 3px;
 }
