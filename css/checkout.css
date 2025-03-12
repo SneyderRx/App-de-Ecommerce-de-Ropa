@@ -1,0 +1,40 @@
+@import url(variables.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--color-9);
+    padding: 24px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    height: 72px;
+}
+header a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 32px;
+    border: 1px solid var(--color-10);
+}
+header a img{
+    object-fit: cover;
+}
+header p{
+    font-family: "EncodeSans-SemiBold";
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--color-5);
+}
+.orders{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+}
