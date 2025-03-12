@@ -1,0 +1,23 @@
+@import url(variables.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    background-image: linear-gradient(to bottom right, black, var(--color-8));
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+main a{
+    text-decoration: none;
+    font-family: "EncodeSans-Bold";
+    font-size: 38px;
+    -webkit-text-stroke: 1px white;
+    color: black;
+    text-shadow: 5px 5px var(--color-2);
+    position: absolute;
+    top: 27%;
+    left: 13%;
+}
